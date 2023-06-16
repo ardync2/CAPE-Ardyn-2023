@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UFT-8" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif+HK:wght@200&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="homepage.css" />
+
+    <title>Ardyn Chin Portfolio</title>
+  </head>
+
+  <img src="Ardyn Chin (1).png" alt="Ardyn" class="header" />
+
+  <body>
+    <img id="AYG" class="img" src="AYG.jpeg" />
+    <button id="BTN" class="button" >MORE IMAGES</button>
+
+    <script>
+      document.getElementById("BTN").addEventListener("click", change);
+      document.getElementById("BTN").addEventListener("mouseover", darken);
+      document.getElementById("BTN").addEventListener("mouseout", lighten);
+
+      function change() {
+        document.getElementById("AYG").src="WISE.jpeg";
+      }
+
+      function darken() {
+        document.getElementById("BTN").style.backgroundColor = "#95a1ae";
+      }
+
+      function lighten() {
+        document.getElementById("BTN").style.backgroundColor = "#c8cfd6";
+      }
+
+    </script>
+
+
+  </body>
+</html>
