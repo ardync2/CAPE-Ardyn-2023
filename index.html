@@ -1,50 +1,44 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+HK:wght@200&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="homepage.css">
+    <meta charset="UFT-8" />
 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif+HK:wght@200&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="homepage.css" />
 
     <title>Ardyn Chin Portfolio</title>
-    <style>
-        .name {
-          font-size: 80px;
-          color: white;
-          width: 50%;
-          position: absolute;
-          border-radius: 250px;
-          left: 37%;
-          top: 15%;
-          position: absolute;
+  </head>
 
-        }
-        .chinese {
-          font-size: 60px;
-          color: rgb(252, 209, 65);
-          width: 50%;
-          position: absolute;
-          border-radius: 250px;
-          left: 45%;
-          top: 30%;
-          position: absolute;
-        }
-        img {
-            width: 400px;
-            height: 400px;
-            position: absolute;
-            border-radius: 250px;
-            top: 55%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-        }
-    </style>
+  <img src="Ardyn Chin (1).png" alt="Ardyn" class="header" />
+
   <body>
-      <div class="container">
-        <img src="https://i.pinimg.com/564x/64/3d/db/643ddb278c87a4a8e6ee34f18744b4b3.jpg" />
-        <p class="name">ardyn chin</p>
-        <p class="chinese"> 陈翠婷 </p>
-      </div>
+    <img id="AYG" class="img" src="AYG.jpeg" />
+    <button id="BTN" class="button" >MORE IMAGES</button>
+
+    <script>
+      document.getElementById("BTN").addEventListener("click", change);
+      document.getElementById("BTN").addEventListener("mouseover", darken);
+      document.getElementById("BTN").addEventListener("mouseout", lighten);
+
+      function change() {
+        document.getElementById("AYG").src="WISE.jpeg";
+      }
+
+      function darken() {
+        document.getElementById("BTN").style.backgroundColor = "#95a1ae";
+      }
+
+      function lighten() {
+        document.getElementById("BTN").style.backgroundColor = "#c8cfd6";
+      }
+
+    </script>
+
+
   </body>
 </html>
